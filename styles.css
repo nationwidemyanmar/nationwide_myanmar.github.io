@@ -6,10 +6,10 @@
 }
 
 :root {
-    --font-size-xsm: .8rem;
+    --font-size-xsm: .9rem;
     --font-size-sm: 1rem;
-    --font-size-md: 1.2rem;
-    --font-size-lg: 1.4rem;
+    --font-size-md: 1.1rem;
+    --font-size-lg: 1.2rem;
     --blue: rgb(7, 42, 117);
     --moss: #dfde9f;
     --dark_black: #1c1c1a;
@@ -71,15 +71,15 @@ nav {
 #motto {
     position: absolute;
     width: 80%;
-    margin-top: 15rem;
+    margin-top: 10rem;
     border-radius: .5rem;
     box-shadow: 0 .3rem .5rem rgba(40, 40, 40, 0.45);
 }
 
 #carouselExampleInterval button{
     margin: auto;
-    width: 5rem;
-    height: 5rem;
+    width: 3rem;
+    height: 3rem;
     background-color: rgba(62, 62, 62, 0.479);
 }
 
@@ -109,6 +109,10 @@ nav {
     height: 2rem;
 }
 
+#why_q {
+    text-align: center;
+}
+
 #reasons {
     max-width: 50rem;
 }
@@ -122,7 +126,7 @@ nav {
 }
 
 #collab img {
-    height: 3rem;
+    height: 2rem;
     margin: .5rem auto;
 }
 
@@ -134,15 +138,41 @@ a {
 
 @media screen and (min-width: 400px) {
 
+    #collab img {
+        height: 2.5rem;
+    }
+
+    #motto {
+        margin-top: 11rem;
+    }
+
+    #reasons p {
+        margin: 1rem 0;
+    }
  
 }
 
 @media screen and (min-width: 700px) {
 
+    #collab img {
+        height: 3rem;
+    }
+
+    #reasons p {
+        margin: 1.5rem 0;
+    }
+
+    #motto {
+        margin-top: 13rem;
+    }
 
 }
 
 @media screen and (min-width: 1024px) {
+
+    body {
+        font-size: var(--font-size-md);
+    }
 
     #collab {
         width: 100%;
@@ -152,6 +182,10 @@ a {
     #collab img {
         height: 3.7rem;
         margin: .7rem auto;
+    }
+
+    #motto {
+        margin-top: 15rem;
     }
 
 }
