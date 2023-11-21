@@ -156,7 +156,7 @@ a {
     background-color: var(--dark_black);
     color: white;
     width: 100vw;
-    padding: 3rem;
+    padding: 3rem 0;
 }
 
 .home_ex_logo {
@@ -176,6 +176,7 @@ a {
     text-align: left;
     max-width: 40rem;
     margin: auto;
+    padding: 0 2rem;
 }
 
 #home_exam_li i {
@@ -190,6 +191,7 @@ a {
 #home_exam_carou {
     margin: auto;
     padding: 1rem 0;
+    width: 95%;
     max-width: 35rem;
 }
 
