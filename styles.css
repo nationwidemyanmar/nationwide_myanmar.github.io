@@ -86,6 +86,8 @@ nav {
     color: var(--blue);
 }
 
+/* home why */
+
 #why {
     display: flex;
     flex-direction: column;
@@ -130,6 +132,10 @@ a {
 /* home courses */
 
 #home_courses {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-content: center;
     padding-bottom: 3rem;
 }
 
@@ -193,6 +199,67 @@ a {
     padding: 1rem 0;
     width: 95%;
     max-width: 35rem;
+}
+
+/* Preschool */
+
+#preschool_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#pre_bg_img {
+    width: 100vw;
+    height: 80vh;
+    object-fit: cover;
+    overflow: hidden;
+    object-position: 50% 10%;
+}
+
+#pre_bg_shapes {
+    position: absolute;
+    width: 80%;
+    max-width: 30rem;
+    padding-left: 3rem;
+}
+
+
+#preschool_title h3 {
+    position: absolute;
+}
+
+#preschool_reasons {
+    padding: 3rem;
+}
+
+#preschool_reasons h6 {
+    padding-bottom: 2rem;
+    line-height: 2rem;
+    max-width: 35rem;
+    margin: auto;
+}
+
+#five_dev {
+    display: grid;
+    grid-template-columns: auto;
+    width: 50%;
+    margin: auto;
+}
+
+#five_dev span {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 0 .1rem .15rem rgba(0, 0, 0, 0.445);
+    border-radius: .4rem;
+}
+
+#five_dev i {
+    font-size: 2rem;
+    padding-bottom: .3rem;
 }
 
 
@@ -276,8 +343,7 @@ footer {
     }
 
     #home_courses {
-        width: 80%;
-        margin: auto;
+        padding: 0 3rem;
         display: grid;
         grid-template-columns: auto auto;
     }
@@ -285,6 +351,11 @@ footer {
     .home_ex_logo {
         width: 8rem;
         margin: 0 1rem;
+    }
+
+    #five_dev {
+        grid-template-columns: auto auto;
+        width: 80%;
     }
 
     footer {
@@ -307,6 +378,19 @@ footer {
     #collab img {
         height: 3.7rem;
         margin: .7rem auto;
+    }
+
+    #pre_bg_img {
+        height: 90vh;
+    }
+
+    #five_dev {
+        grid-template-columns: auto auto auto;
+        width: 80%;
+    }
+
+    #five_dev span {
+        margin: 2rem 3rem;
     }
 
 }
