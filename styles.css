@@ -244,7 +244,7 @@ a {
 #five_dev {
     display: grid;
     grid-template-columns: auto;
-    width: 50%;
+    width: 100%;
     margin: auto;
 }
 
@@ -437,7 +437,6 @@ footer {
 
     #five_dev {
         grid-template-columns: auto auto;
-        width: 100%;
     }
  
 }
