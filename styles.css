@@ -248,7 +248,7 @@ a {
     margin: auto;
 }
 
-#five_dev span {
+.dev_sec {
     display: flex;
     flex-direction: column;
     padding: 1rem;
@@ -257,9 +257,114 @@ a {
     border-radius: .4rem;
 }
 
-#five_dev i {
+.dev_sec_logo {
     font-size: 2rem;
     padding-bottom: .3rem;
+}
+
+#preschool_courses {
+    padding: 3rem;
+    align-items: center;
+    justify-items: center;
+}
+
+#pre_reason {
+    padding-bottom: 3rem;
+    line-height: 2rem;
+    max-width: 35rem;
+    margin: auto;
+}
+
+.pre {
+    padding: 2rem 0;
+    margin: 2rem auto;
+    max-width: 35rem;
+
+}
+
+#pre_border {
+    border-bottom: .1rem dotted gray;
+}
+
+.pre_indi {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    max-width: 30rem;
+}
+  
+.pre_indi_bg {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .3s ease;
+}
+
+.overlay {
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 0%;
+  transition: .5s ease;
+  border-radius: 1rem;
+}
+
+#pre_full {
+    background-image: url(./img/c4.jpg);
+}
+
+#pre_part {
+    background-image: url(./img/c1.jpg);
+}
+
+.pre_border {
+    background-color: rgba(255, 255, 255, 0.874);
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+#pre_yellow {
+    border: .2rem solid rgb(255, 251, 23);
+}
+
+#pre_green {
+    border: .2rem solid rgb(111, 255, 34);
+  }
+
+.pre_title {
+  white-space: nowrap;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.pre-sbj {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-width: 20rem;
+    margin: auto;
+}
+
+.pre h6 {
+    margin: 1rem 0;
+}
+
+.pre-sbj span {
+    margin-bottom: .3rem;
+}
+
+.pre-sbj i {
+    margin-right: 1rem;
 }
 
 
@@ -329,6 +434,11 @@ footer {
     #reasons p {
         margin: 1rem 0;
     }
+
+    #five_dev {
+        grid-template-columns: auto auto;
+        width: 100%;
+    }
  
 }
 
@@ -354,8 +464,7 @@ footer {
     }
 
     #five_dev {
-        grid-template-columns: auto auto;
-        width: 80%;
+        grid-template-columns: auto auto auto;
     }
 
     footer {
@@ -384,13 +493,18 @@ footer {
         height: 90vh;
     }
 
-    #five_dev {
-        grid-template-columns: auto auto auto;
-        width: 80%;
+    .dev_sec {
+        padding: 2rem;
+        margin: 2rem 3rem;
     }
 
-    #five_dev span {
-        margin: 2rem 3rem;
+    #pre_grid {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    #pre_border {
+        border-bottom: .1rem dotted transparent;
     }
 
 }
