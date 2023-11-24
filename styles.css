@@ -279,7 +279,6 @@ a {
     padding: 2rem 0;
     margin: 2rem auto;
     max-width: 35rem;
-
 }
 
 #pre_border {
@@ -329,12 +328,14 @@ a {
 }
 
 #pre_yellow {
+    font-size: var(--font-size-xsm);
     border: .2rem solid rgb(255, 251, 23);
 }
 
 #pre_green {
+    font-size: var(--font-size-xsm);
     border: .2rem solid rgb(111, 255, 34);
-  }
+}
 
 .pre_title {
   white-space: nowrap;
@@ -438,6 +439,10 @@ footer {
     #five_dev {
         grid-template-columns: auto auto;
     }
+
+    #pre_yellow, #pre_green {
+        font-size: var(--font-size-sm);
+    }
  
 }
 
@@ -464,6 +469,10 @@ footer {
 
     #five_dev {
         grid-template-columns: auto auto auto;
+    }
+
+    #pre_yellow, #pre_green {
+        font-size: var(--font-size-md);
     }
 
     footer {

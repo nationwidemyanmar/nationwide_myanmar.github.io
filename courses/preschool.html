@@ -105,13 +105,7 @@
 
         </div>
 
-
-
-
       </div>
-
-
-
 
     </main>
     <footer>
@@ -147,24 +141,49 @@
         
         const overlay_full = selector("#pre_full")
         const overlay_part = selector("#pre_part")
-        console.log(this)
+        console.log(this.scrollY)
 
-        if (this.scrollY >= 1350 && this.innerWidth >= 1024) {
+        if (this.scrollY >= 1700 && this.innerWidth < 400) {
           overlay_full.style.bottom = "0";
           overlay_full.style.height = "100%";
           overlay_full.style.transition = ".5s ease";
+        }
+
+        if (this.scrollY >= 2300 && this.innerWidth < 400) {
           overlay_part.style.bottom = "0";
           overlay_part.style.height = "100%";
           overlay_part.style.transition = ".5s ease";
         }
 
-        if (this.scrollY >= 1250 && this.innerWidth < 1024) {
+        if (this.scrollY >= 1600 && this.innerWidth > 400) {
           overlay_full.style.bottom = "0";
           overlay_full.style.height = "100%";
           overlay_full.style.transition = ".5s ease";
         }
 
-        if (this.scrollY >= 1940 && this.innerWidth < 1024) {
+        if (this.scrollY >= 2200 && this.innerWidth > 400) {
+          overlay_part.style.bottom = "0";
+          overlay_part.style.height = "100%";
+          overlay_part.style.transition = ".5s ease";
+        }
+
+        
+        if (this.scrollY >= 1250 && this.innerWidth > 700 && this.innerWidth < 1024) {
+          overlay_full.style.bottom = "0";
+          overlay_full.style.height = "100%";
+          overlay_full.style.transition = ".5s ease";
+        }
+        
+        if (this.scrollY >= 1940 && this.innerWidth > 700 && this.innerWidth < 1024) {
+          overlay_part.style.bottom = "0";
+          overlay_part.style.height = "100%";
+          overlay_part.style.transition = ".5s ease";
+        }
+
+        if (this.scrollY >= 1350 && this.innerWidth >= 1024) {
+          overlay_full.style.bottom = "0";
+          overlay_full.style.height = "100%";
+          overlay_full.style.transition = ".5s ease";
           overlay_part.style.bottom = "0";
           overlay_part.style.height = "100%";
           overlay_part.style.transition = ".5s ease";
