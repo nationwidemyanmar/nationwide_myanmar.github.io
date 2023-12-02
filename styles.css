@@ -218,6 +218,46 @@ a {
     margin: 0 .3rem;
 }
 
+/* home_testi */
+
+#home_testi {
+    background-color: whitesmoke;
+    padding: 2rem;
+}
+
+#home_testi h3 {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+#testi_collection {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.testi_indi {
+    padding: 1rem;
+    width: 100%;
+    margin: 1rem auto;
+    background-color: white;
+    border-radius: .3rem;
+    transition: all .5s;
+}
+
+.testi_indi img {
+    width: 10rem;
+    position: relative;
+    object-fit: contain;
+    margin: 1rem 0;
+}
+
+#testi_collection:hover .testi_indi {
+    box-shadow: 0 .2rem .2rem rgba(128, 128, 128, 0.447);
+    transition: all .5s;
+}
+
+
 /* Preschool */
 
 #preschool_title {
@@ -554,7 +594,7 @@ a {
     margin: 2rem auto;
 }
 
-#icon_credit {
+.icon_credit {
     display: flex;
     width: 80%;
     max-width: 40rem;
@@ -563,6 +603,97 @@ a {
     color: gray;
 }
 
+/* testimonial */
+
+#yl_test, #adult_test {
+    margin: 2rem 0;
+}
+
+.student {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    max-width: 45rem;
+    margin: auto;
+    margin-bottom: 2rem;
+    border-radius: .3rem;
+}
+
+/* add margin for indi students */
+
+#test_main_title {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.test_titles {
+    margin: 3rem 0;
+}
+
+#test_cate {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-width: 30rem;
+    border: .1rem solid rgba(128, 128, 128, 0.7);
+    border-radius: .3rem;
+    margin: auto;
+}
+
+#test_cate a {
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    padding: 0 1.5rem;
+    transition: all .5s;
+}
+
+#test_cate a i {
+    margin-right: .5rem;
+}
+
+#test_cate a:hover {
+    transform: scale(1.05);
+    transition: all .5s;
+}
+
+.to_top {
+    position: fixed;
+    font-size: 2rem;
+    bottom: 1rem;
+    right: 1.5rem;
+    color: var(--blue);
+    z-index: 2;
+}
+
+.student_info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.student_info img {
+    object-fit: contain;
+    max-width: 20rem;
+    margin-bottom: .5rem;
+    border-radius: .3rem;
+}
+
+.student q {
+    padding: 0 2rem 2rem 2rem;
+    text-align: left;
+    background-image: url(./img/logo_tp_2.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.map_icon {
+    height: 1.5rem;
+}
+
+/* footer */
 
 footer {
     width: 100%;
@@ -671,6 +802,15 @@ footer {
         margin: 0 1rem;
     }
 
+    #testi_collection {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .testi_indi {
+        margin: 1rem .5rem;
+    }
+
     #five_dev {
         grid-template-columns: auto auto auto;
     }
@@ -700,6 +840,24 @@ footer {
         width: 80%;
     }
 
+    .student {
+        padding: 1rem 0;
+        flex-direction: row;
+        background-image: url(./img/logo_tp_2.png);
+        background-position: 50% 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .student q {
+        background-image: none;
+    }
+
+    .to_top {
+        font-size: 2.3rem;
+        right: 2rem;
+    }
+
     footer {
         flex-direction: row;
     }
@@ -720,6 +878,10 @@ footer {
     #collab img {
         height: 3.7rem;
         margin: .7rem auto;
+    }
+
+    .testi_indi {
+        margin: 1rem 1rem;
     }
 
     #pre_bg_img {
@@ -754,6 +916,11 @@ footer {
 
     .course_main:hover .to_courses div i {
         transform: translate(900%, 0%);
+    }
+
+    .to_top {
+        font-size: 2.5rem;
+        right: 3rem;
     }
 
 }
