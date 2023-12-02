@@ -521,7 +521,7 @@ a {
     display: flex;
     flex-direction: column;
     text-align: left;
-    width: 80%;
+    width: 90%;
     max-width: 40rem;
     margin: auto;
     margin-bottom: 2rem;
@@ -533,7 +533,7 @@ a {
 
 #contact_info a:hover {
     transform: scale(1.01);
-    text-decoration: underline;
+    color: rgb(76, 160, 255);
     transition: all .5s;
 }
 
@@ -643,6 +643,10 @@ footer {
     .course_main:hover .to_courses div i {
         transform: translate(200%, 0%);
     }
+
+    #contact_info {
+        width: 85%;
+    }
  
 }
 
@@ -690,6 +694,10 @@ footer {
 
     .course_main:hover .to_courses div i {
         transform: translate(650%, 0%);
+    }
+
+    #contact_info {
+        width: 80%;
     }
 
     footer {
