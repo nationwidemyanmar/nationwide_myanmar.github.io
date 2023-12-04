@@ -235,13 +235,10 @@ a {
     flex-direction: column;
 }
 
-
 .testi_indi {
     padding: 1rem;
     width: 100%;
-    margin: 1rem auto;
     background-color: white;
-    border-radius: .3rem;
     transition: all .5s;
 }
 
@@ -254,6 +251,21 @@ a {
 
 #testi_collection:hover .testi_indi {
     box-shadow: 0 .2rem .2rem rgba(128, 128, 128, 0.447);
+    transition: all .5s;
+}
+
+.testi_indi span i, .testi_indi span {
+    transition: all .5s;
+}
+
+#testi_collection:hover .testi_indi span {
+    color: green;
+    transition: all .5s;
+}
+
+#testi_collection:hover .testi_indi span i {
+    color: green;
+    transform: scale(1.2) translate(50%, 0%);
     transition: all .5s;
 }
 
@@ -808,7 +820,7 @@ footer {
     }
 
     .testi_indi {
-        margin: 1rem .5rem;
+        margin: 1rem 0rem;
     }
 
     #five_dev {
@@ -881,7 +893,7 @@ footer {
     }
 
     .testi_indi {
-        margin: 1rem 1rem;
+        margin: 1rem 0rem;
     }
 
     #pre_bg_img {
