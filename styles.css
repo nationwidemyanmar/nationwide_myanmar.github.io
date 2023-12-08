@@ -109,6 +109,8 @@ nav {
 
 #reasons {
     max-width: 50rem;
+    transform: translate(10%, 0%);
+    opacity: 0%;
 }
 
 #collab {
@@ -137,6 +139,8 @@ a {
     align-items: center;
     justify-content: center;
     padding-bottom: 3rem;
+    transform: translate(10%, 0%);
+    opacity: 0%;
 }
 
 .home_course_cards {
