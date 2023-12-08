@@ -259,5 +259,38 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script>
+
+      function selector(element) {
+          const el = document.querySelector(element)
+          if (el) return el;
+      }
+      window.addEventListener('scroll', function(event) {
+        console.log(this.scrollY, this.innerWidth)
+
+        const reasons = selector("#reasons")
+        const h_courses = selector("#home_courses")
+
+        if (this.scrollY > 150) {
+          reasons.style.transform = "translate(0%, 0%)";
+          reasons.style.opacity = "100%";
+          reasons.style.transition = "all .5s";
+        }
+
+        if (this.scrollY > 1000 && this.innerWidth >= 700) {
+          h_courses.style.transform = "translate(0%, 0%)";
+          h_courses.style.opacity = "100%";
+          h_courses.style.transition = "all .5s";
+        }
+
+        if (this.scrollY > 1300 && this.innerWidth < 700) {
+          h_courses.style.transform = "translate(0%, 0%)";
+          h_courses.style.opacity = "100%";
+          h_courses.style.transition = "all .5s";
+        }
+
+        
+      })
+  </script>
 </body>
 </html>
